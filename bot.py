@@ -6,19 +6,28 @@ client = commands.Bot(command_prefix=">")
 
 @client.command()
 async def load(ctx, extension):
-    client.load_extension(f'cogs.{extension}')
-    await ctx.send("loaded {}".format(extension))
+    if ctx.author.id == 287060396953698305:
+        client.load_extension(f'cogs.{extension}')
+        await ctx.send("loaded {}".format(extension))
+    else:
+        await ctx.send("YOU'RE NOT ALLOWED TO DO THAT :(")
 
 @client.command()
 async def unload(ctx, extension):
-    client.unload_extension(f'cogs.{extension}')
-    await ctx.send("unloaded {}".format(extension))
+    if ctx.author.id == 287060396953698305:
+        client.unload_extension(f'cogs.{extension}')
+        await ctx.send("unloaded {}".format(extension))
+    else:
+        await ctx.send("YOU'RE NOT ALLOWED TO DO THAT :(")
 
 @client.command()
 async def reload(ctx, extension):
-    client.unload_extension(f'cogs.{extension}')
-    client.load_extension(f'cogs.{extension}')
-    await ctx.send("reloaded {}".format(extension))
+    if ctx.author.id == 287060396953698305:
+        client.unload_extension(f'cogs.{extension}')
+        client.load_extension(f'cogs.{extension}')
+        await ctx.send("reloaded {}".format(extension))
+    else:
+        await ctx.send("YOU'RE NOT ALLOWED TO DO THAT :(")
 
 for filename in os.listdir('./cogs'):
     if filename.endswith(".py"):
