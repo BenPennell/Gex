@@ -13,9 +13,9 @@ class Basic(commands.Cog):
     
     @commands.Cog.listener()
     async def on_ready(self):
-        activity = discord.Game(name="In a pond", type=3)
+        activity = discord.Game(name="Gex: Enter the Gecko", type=3)
         await self.client.change_presence(status=discord.Status.online, activity=activity)
-        print('DuccBot is up and running')
+        print('GexBot is up and running')
     
     @commands.command()
     async def ping(self, ctx):

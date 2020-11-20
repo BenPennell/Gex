@@ -1,4 +1,14 @@
-# Ducc
- a bot from Ducc
-it do be doing bot stuff doe
-uhhhhhhhh it's vv bad
+# GEX BOT
+
+# FEATURES
+- makes you question your life choices
+- is kind of dumb
+
+## >Gex
+- get a random gex voiceline
+
+## >Copypasta
+- get a random copypasta
+
+## jokes
+- you don't want these
